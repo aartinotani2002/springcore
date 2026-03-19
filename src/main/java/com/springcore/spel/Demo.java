@@ -15,7 +15,8 @@ public class Demo {
 	private double e;
 	@Value("#{new java.lang.String('Aarti')}")
 	private String name;
-
+	@Value("#{8<3}")
+	private boolean isActive;
 	public int getX() {
 		return x;
 	}
@@ -43,8 +44,10 @@ public class Demo {
 	}
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", name=" + name + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", name=" + name + ", isActive=" + isActive
+				+ "]";
 	}
+	
 	
 	
 
